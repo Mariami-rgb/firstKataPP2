@@ -18,6 +18,6 @@ public class Main {
         for (User user: userService.getAllUsers()){
             System.out.println(user);// реализуйте алгоритм здесь
         }
-        userService.cleanUsersTable();
+//        userService.cleanUsersTable();
     }
 }
