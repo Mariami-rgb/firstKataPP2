@@ -22,7 +22,7 @@ public class UserDaoJDBCImpl implements UserDao {
 
     public void createUsersTable() {
         try (Statement stmt = conn.createStatement()) {
-            int result = stmt.executeUpdate(CREATE_TABLE_SQL);
+            stmt.executeUpdate(CREATE_TABLE_SQL);
             System.out.println("Таблица создана или уже существует");
         } catch (SQLException e) {
             throw new RuntimeException(e);
